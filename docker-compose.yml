@@ -7,5 +7,5 @@ services:
     tty: true           # Permet de garder le terminal actif
     stdin_open: true    # Ouvre le flux d'entrée pour les commandes
     command: /bin/bash  # Lance un shell bash pour accéder à l'interface CL
-  env_file:
+    env_file:
     - stack.env
