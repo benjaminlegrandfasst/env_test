@@ -1,1 +1,9 @@
-test
+version: '3.8'
+
+services:
+  debian_cli:
+    image: debian
+    container_name: debian_cli
+    tty: true           # Permet de garder le terminal actif
+    stdin_open: true    # Ouvre le flux d'entrée pour les commandes
+    command: /bin/bash  # Lance un shell bash pour accéder à l'interface CL
