@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   debian_cli:
-    image: debian:$${TAG]
+    image: debian:latest
     container_name: debian_cli
     tty: true           # Permet de garder le terminal actif
     stdin_open: true    # Ouvre le flux d'entrée pour les commandes
