@@ -9,5 +9,3 @@ services:
     command: /bin/bash  # Lance un shell bash pour accéder à l'interface CL
     environment:
       VERSION: ${TAG}
-    env_file:
-    - .env
