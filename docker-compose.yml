@@ -8,4 +8,4 @@ services:
     stdin_open: true    # Ouvre le flux d'entrée pour les commandes
     command: /bin/bash  # Lance un shell bash pour accéder à l'interface CL
     environment:
-      - VERSION=$TAG}
+      - VERSION=${TAG}
