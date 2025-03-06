@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nginx1:
+    image: nginx
+    container_name: nginx1
+    labels:
+      - "traefik.ancien2=123"
+      - "traefik.ancien2=456"
+      - "traefik.ancien2=789"
+  nginx2:
+    image: nginx
+    container_name: nginx2
