@@ -5,9 +5,11 @@ services:
     image: nginx
     container_name: nginx1
     labels:
-      - "traefik.ancien2=123"
-      - "traefik.ancien2=456"
-      - "traefik.ancien2=789"
+      - "traefik.enable=true"
+      - "traefik.app.frontend.rule=Host:nginx.migration.traefik.fasst.tech"
+      - "traefik.app.port=80"
+      - "traefik.app.protocol=http"
+      - "traefik.docker.network=base"
   nginx2:
     image: nginx
     container_name: nginx2
