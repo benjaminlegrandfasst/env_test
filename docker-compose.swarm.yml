@@ -4,12 +4,13 @@ services:
   nginx1:
     image: nginx
     container_name: nginx1
-    labels:
-      - "traefik.enable=true"
-      - "traefik.app.frontend.rule=Host:nginx.migration.traefik.fasst.tech"
-      - "traefik.app.port=80"
-      - "traefik.app.protocol=http"
-      - "traefik.docker.network=base"
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.app.frontend.rule=Host:nginx.migration.traefik.fasst.tech"
+        - "traefik.app.port=80"
+        - "traefik.app.protocol=http"
+        - "traefik.docker.network=base"
   nginx2:
     image: nginx
     container_name: nginx2
